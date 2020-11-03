@@ -9,3 +9,18 @@
 // Вывести этот массив в консоль;
 // Упорядочить массив;
 // Еще раз вывести его в консоль.
+
+
+
+// Task-1
+let str = prompt('Напишите слово для проверки на палиндром');
+function palindrome() {
+    let strReverse = str.split('').reverse().join('');
+    if(strReverse == str) {
+        alert( str + ' - палиндром ');
+    }else {
+        alert( str + ' - не палиндром ');
+    }
+}
+
+palindrome();
